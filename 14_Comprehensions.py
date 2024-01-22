@@ -36,6 +36,6 @@ tp = tuple(lst)
 print(lst)
 
 print("\n\n--------------------------------------\n\n")
-
-publicMethods = tuple(x   for x in dir(int) if x.startswith('_') == False)
+MyType = set()
+publicMethods = tuple(x   for x in dir(MyType) if callable(getattr(MyType, x)) ==True and x.startswith('_') == False)
 print(publicMethods)
