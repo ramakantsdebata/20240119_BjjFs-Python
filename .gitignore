@@ -3,6 +3,8 @@
 
 # Ignore virtual environment
 venv/
+sandbox*/
+.env2/
 
 # Ignore IDE files
 .vscode/
@@ -18,3 +20,4 @@ __pycache__/
 *.egg-info/
 dist/
 build/
+
