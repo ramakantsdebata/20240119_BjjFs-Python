@@ -64,10 +64,24 @@ class MyFib:
     def __next__(self):
         pass
 
-def Test6():
-    it = MyFib(7)
+def iterate(obj):
+    it = iter(obj)
     for x in it:
         print(x)
+
+def Test6():
+    objFib = MyFib(7)
+
+    print("-"*10)
+    iterate(objFib)
+
+    print("-"*10)
+    iterate(objFib)
+
+    print("-"*10)
+    iterate(objFib)
+    
+
 
 
 
