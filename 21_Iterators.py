@@ -55,14 +55,24 @@ def Test5():
         print(x)
 
 class MyFib:
-    def __init__(self):
-        pass
+    def __init__(self, limit):
+        self.limit = limit
+        
 
     def __iter__(self):
-        pass
+        self.a = 0
+        self.b = 1
+        self.count = 0
+        return self
 
     def __next__(self):
-        pass
+        ret = self.a
+        self.a, self.b = self.b, self.a + self.b
+        self.count += 1
+        if self.count < self.limit:
+            return ret
+        else:
+            raise StopIteration
 
 def iterate(obj):
     it = iter(obj)

@@ -78,4 +78,5 @@ def Test2():
     print("b", type(b), b)
     print("c", type(c), c)
 
-Test2()
+Test1()
+# Test2()
