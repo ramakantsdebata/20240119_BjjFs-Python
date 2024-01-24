@@ -32,4 +32,7 @@ def main():
     print(next(x))
     print(next(x))
 
+    x = fib(5)
+    print(next(x))
+
 main()

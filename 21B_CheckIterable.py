@@ -1,9 +1,13 @@
 def isIterable(obj):
-    pass
-
+    try:
+        iter(obj)
+        return True
+    except Exception:
+        return False
+    
 if __name__ == "__main__":
     a = 10
-    print(isIteratable(a))
+    print(isIterable(a))
     b = "Hello"
     print(isIterable(b))
     c = [10, 2]

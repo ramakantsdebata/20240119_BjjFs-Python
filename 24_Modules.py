@@ -32,23 +32,31 @@
 
 #############################
     
-from TestModule import *
-from TestModule import swap
+# from TestModule import *
+# from TestModule import swap
 
-def Test6():
-    Testing()
-    sort([1, 2, 3])
-    swap(1, 2)
+# def Test6():
+#     Testing()
+#     sort([1, 2, 3])
+#     swap(1, 2)
 
-# from  _24_ModuleCollection import *
-# from _24_ModuleCollection import math
+# # from  _24_ModuleCollection import *
+# # from _24_ModuleCollection import math
 
-def main():
-    # Test1()
-    # Test2()
-    # Test3()
-    # Test4()
-    # Test5()
-    Test6()
+# def main():
+#     # Test1()
+#     # Test2()
+#     # Test3()
+#     # Test4()
+#     # Test5()
+#     Test6()
 
-main()
+# main()
+############################################
+
+from _24_ModuleCollection.math import *
+from _24_ModuleCollection.math import subtract
+
+
+print(add(1, 2))
+print(subtract(3, 2))
